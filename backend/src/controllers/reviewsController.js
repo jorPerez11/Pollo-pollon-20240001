@@ -30,3 +30,5 @@ reviewsController.deleteReviews = async(req, res) => {
     await reviewsModel.findByIdAndDelete(req.params.id);
     res.json({message: "Review deleted"});
 }
+
+export default reviewsController;
